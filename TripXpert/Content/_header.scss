@@ -1,0 +1,131 @@
+// Header
+#header {
+    border-bottom: 1px solid white;
+    background: rgba(white, .85);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+
+    .tx-search-shown & {
+        background-color: transparent;
+        pointer-events: none;
+
+        .tx-menu-open {
+            display: none;
+        }
+    }
+
+    .logo {
+        width: 150px;
+
+        .k-ie & {
+            height: 35px;
+        }
+    }
+
+    // Top menu
+    .tx-top-menu {
+        padding: 0;
+        margin: -$navbar-padding-y 0;
+        font-size: 18px;
+        background: none;
+        align-self: stretch;
+
+        .k-item {
+            color: inherit;
+        }
+
+        .k-state-hover,
+        .k-state-highlight {
+            color: $accent;
+        }
+
+        .k-state-highlight::after {
+            content: "";
+            height: 3px;
+            background: currentColor;
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+    }
+}
+
+
+// Jumbotrons
+.jumbotron-splash {
+    margin-top: -70px;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+
+#tx-top-menu-container {
+    padding: 1rem 0;
+    margin: -1rem 0;
+    height: auto;
+    display: flex;
+    align-self: stretch;
+    float: none;
+    overflow: visible;
+
+    .tx-top-menu > .k-item > .k-link {
+        padding: .5rem 1rem;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .k-rpanel-toggle {
+        border-width: 0;
+        background-image: none;
+        background-color: transparent;
+    }
+
+    #tx-top-menu-container {
+        margin: 0;
+        padding: 1.3125rem 1rem;
+        height: 100%;
+        background: #ffffff;
+        flex-direction: column;
+        align-items: flex-end;
+        box-shadow: none;
+
+        &.k-rpanel-expanded {
+            box-shadow: 0 0 100px rgba(0, 0, 0, .2);
+            transition: all .2s ease-in-out;
+        }
+
+        .tx-top-menu {
+            margin-top: 1rem;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+            .tx-top-menu .k-item {
+                justify-content: flex-end;
+            }
+    }
+
+
+    #header .navbar-brand {
+        z-index: 10;
+    }
+    #tx-top-menu-container {
+        width: 100%;
+    }
+}
+
+
+.tx-menu-shown {
+    overflow: hidden;
+}
+.tx-search-shown {
+    overflow: hidden;
+}

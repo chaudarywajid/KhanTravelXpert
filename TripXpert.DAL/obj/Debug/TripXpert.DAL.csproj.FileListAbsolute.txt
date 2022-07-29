@@ -1,0 +1,24 @@
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert.DAL\bin\Debug\TripXpert.DAL.dll.config
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert.DAL\bin\Debug\TripXpert.DAL.dll
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert.DAL\bin\Debug\TripXpert.DAL.pdb
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert.DAL\bin\Debug\EntityFramework.dll
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert.DAL\bin\Debug\EntityFramework.xml
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert.DAL\obj\Debug\TripXpert.DAL.csprojAssemblyReference.cache
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert.DAL\obj\Debug\TripXpert.DAL.csproj.CoreCompileInputs.cache
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert.DAL\obj\Debug\TripXpert.DAL.csproj.CopyComplete
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert.DAL\obj\Debug\TripXpert.DAL.dll
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert.DAL\obj\Debug\TripXpert.DAL.pdb
+C:\CodeGitHub\AZUMATICTravel\TripXpert.DAL\bin\Debug\TripXpert.DAL.dll.config
+C:\CodeGitHub\AZUMATICTravel\TripXpert.DAL\bin\Debug\TripXpert.DAL.dll
+C:\CodeGitHub\AZUMATICTravel\TripXpert.DAL\bin\Debug\TripXpert.DAL.pdb
+C:\CodeGitHub\AZUMATICTravel\TripXpert.DAL\bin\Debug\EntityFramework.dll
+C:\CodeGitHub\AZUMATICTravel\TripXpert.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\CodeGitHub\AZUMATICTravel\TripXpert.DAL\bin\Debug\EntityFramework.xml
+C:\CodeGitHub\AZUMATICTravel\TripXpert.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\CodeGitHub\AZUMATICTravel\TripXpert.DAL\obj\Debug\TripXpert.DAL.csproj.AssemblyReference.cache
+C:\CodeGitHub\AZUMATICTravel\TripXpert.DAL\obj\Debug\TripXpert.DAL.csproj.CoreCompileInputs.cache
+C:\CodeGitHub\AZUMATICTravel\TripXpert.DAL\obj\Debug\TripXpert.DAL.csproj.CopyComplete
+C:\CodeGitHub\AZUMATICTravel\TripXpert.DAL\obj\Debug\TripXpert.DAL.dll
+C:\CodeGitHub\AZUMATICTravel\TripXpert.DAL\obj\Debug\TripXpert.DAL.pdb

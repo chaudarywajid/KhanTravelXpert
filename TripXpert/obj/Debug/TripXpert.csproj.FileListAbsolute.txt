@@ -1,0 +1,145 @@
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\obj\Debug\TripXpert.csprojAssemblyReference.cache
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\obj\Debug\TripXpert.csproj.CoreCompileInputs.cache
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\roslyn\csc.exe
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\roslyn\vbc.exe
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\roslyn\VBCSCompiler.exe
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\TripXpert.dll.config
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\TripXpert.dll
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\TripXpert.pdb
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\Antlr3.Runtime.dll
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\EntityFramework.dll
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\EntityFramework.SqlServer.dll
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\Kendo.Mvc.dll
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\Newtonsoft.Json.dll
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\System.Web.Helpers.dll
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\System.Web.Mvc.dll
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\System.Web.Optimization.dll
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\System.Web.Razor.dll
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\System.Web.WebPages.Deployment.dll
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\System.Web.WebPages.dll
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\System.Web.WebPages.Razor.dll
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\TripXpert.DAL.dll
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\WebGrease.dll
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\TripXpert.DAL.pdb
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\TripXpert.DAL.dll.config
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\Kendo.Mvc.xml
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\System.Web.Helpers.xml
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\System.Web.Mvc.xml
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\System.Web.Razor.xml
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\System.Web.WebPages.xml
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\System.Web.WebPages.Deployment.xml
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\System.Web.WebPages.Razor.xml
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\System.Web.Optimization.xml
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\Antlr3.Runtime.pdb
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\Newtonsoft.Json.xml
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\EntityFramework.xml
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\EntityFramework.SqlServer.xml
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\ar-AE\Kendo.Mvc.resources.dll
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\bg-BG\Kendo.Mvc.resources.dll
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\cs-CZ\Kendo.Mvc.resources.dll
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\da-DK\Kendo.Mvc.resources.dll
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\de-DE\Kendo.Mvc.resources.dll
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\el-GR\Kendo.Mvc.resources.dll
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\es-ES\Kendo.Mvc.resources.dll
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\fr-CA\Kendo.Mvc.resources.dll
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\fr-FR\Kendo.Mvc.resources.dll
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\he-IL\Kendo.Mvc.resources.dll
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\it-IT\Kendo.Mvc.resources.dll
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\nl-NL\Kendo.Mvc.resources.dll
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\pl-PL\Kendo.Mvc.resources.dll
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\pt-BR\Kendo.Mvc.resources.dll
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\pt-PT\Kendo.Mvc.resources.dll
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\ro-RO\Kendo.Mvc.resources.dll
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\ru-RU\Kendo.Mvc.resources.dll
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\sk-SK\Kendo.Mvc.resources.dll
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\sv-SE\Kendo.Mvc.resources.dll
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\tr-TR\Kendo.Mvc.resources.dll
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\uk-UA\Kendo.Mvc.resources.dll
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\bin\zh-CN\Kendo.Mvc.resources.dll
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\obj\Debug\TripXpert.csproj.CopyComplete
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\obj\Debug\TripXpert.dll
+C:\Users\chaud\Downloads\mvc-tripxpert-pwa-master (1)\mvc-tripxpert-pwa-master\TripXpert\obj\Debug\TripXpert.pdb
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\roslyn\csc.exe
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\roslyn\System.Collections.Immutable.dll
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\roslyn\System.Reflection.Metadata.dll
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\roslyn\vbc.exe
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\roslyn\VBCSCompiler.exe
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\roslyn\VBCSCompiler.exe.config
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\TripXpert.dll.config
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\TripXpert.dll
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\TripXpert.pdb
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\Antlr3.Runtime.dll
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\EntityFramework.dll
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\EntityFramework.SqlServer.dll
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\Microsoft.Web.Infrastructure.dll
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\Newtonsoft.Json.dll
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\System.Web.Helpers.dll
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\System.Web.Mvc.dll
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\System.Web.Optimization.dll
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\System.Web.Razor.dll
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\System.Web.WebPages.Deployment.dll
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\System.Web.WebPages.dll
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\System.Web.WebPages.Razor.dll
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\TripXpert.DAL.dll
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\WebGrease.dll
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\TripXpert.DAL.pdb
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\TripXpert.DAL.dll.config
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\Kendo.Mvc.xml
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\System.Web.Helpers.xml
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\System.Web.Mvc.xml
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\System.Web.Razor.xml
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\System.Web.WebPages.xml
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\System.Web.WebPages.Deployment.xml
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\System.Web.WebPages.Razor.xml
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\System.Web.Optimization.xml
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\Antlr3.Runtime.pdb
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\Newtonsoft.Json.xml
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\EntityFramework.xml
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\EntityFramework.SqlServer.xml
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\ar-AE\Kendo.Mvc.resources.dll
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\bg-BG\Kendo.Mvc.resources.dll
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\cs-CZ\Kendo.Mvc.resources.dll
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\da-DK\Kendo.Mvc.resources.dll
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\de-DE\Kendo.Mvc.resources.dll
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\el-GR\Kendo.Mvc.resources.dll
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\es-ES\Kendo.Mvc.resources.dll
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\fr-CA\Kendo.Mvc.resources.dll
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\fr-FR\Kendo.Mvc.resources.dll
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\he-IL\Kendo.Mvc.resources.dll
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\it-IT\Kendo.Mvc.resources.dll
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\nl-NL\Kendo.Mvc.resources.dll
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\pl-PL\Kendo.Mvc.resources.dll
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\pt-BR\Kendo.Mvc.resources.dll
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\pt-PT\Kendo.Mvc.resources.dll
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\ro-RO\Kendo.Mvc.resources.dll
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\ru-RU\Kendo.Mvc.resources.dll
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\sk-SK\Kendo.Mvc.resources.dll
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\sv-SE\Kendo.Mvc.resources.dll
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\tr-TR\Kendo.Mvc.resources.dll
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\uk-UA\Kendo.Mvc.resources.dll
+C:\CodeGitHub\AZUMATICTravel\TripXpert\bin\zh-CN\Kendo.Mvc.resources.dll
+C:\CodeGitHub\AZUMATICTravel\TripXpert\obj\Debug\TripXpert.csproj.AssemblyReference.cache
+C:\CodeGitHub\AZUMATICTravel\TripXpert\obj\Debug\TripXpert.csproj.CoreCompileInputs.cache
+C:\CodeGitHub\AZUMATICTravel\TripXpert\obj\Debug\TripXpert.csproj.CopyComplete
+C:\CodeGitHub\AZUMATICTravel\TripXpert\obj\Debug\TripXpert.dll
+C:\CodeGitHub\AZUMATICTravel\TripXpert\obj\Debug\TripXpert.pdb

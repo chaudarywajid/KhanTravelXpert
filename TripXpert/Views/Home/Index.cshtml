@@ -1,0 +1,224 @@
+@{
+    ViewBag.Title = "Home Page";
+}
+@section Kendo
+{
+    <script src="https://kendo.cdn.telerik.com/2020.2.513/js/kendo.listview.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2020.2.513/js/kendo.list.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2020.2.513/js/kendo.combobox.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2020.2.513/js/kendo.button.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2020.2.513/js/kendo.dropdownlist.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2020.2.513/js/kendo.userevents.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2020.2.513/js/kendo.draganddrop.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2020.2.513/js/kendo.slider.min.js"></script>
+    <script src="~/Scripts/register-service-worker.js"></script>
+
+}
+
+@Html.Partial("Search")
+<input type="hidden" id="priceRange" />
+
+<div class="mt-5 k-flex">
+    <div class="container">
+
+        <div class="text-center tx-bottom-dash">
+            <h2 class="h1">Tripxpert Recommends</h2>
+            <p class="text-muted font-italic">Explore top destinations and attractions</p>
+        </div>
+        @(Html.Kendo().ListView<TripXpert.Models.DestinationViewModel>()
+                                            .Name("listView")
+                                            .TagName("div")
+                                            .ClientTemplateId("kendo-card-template")
+                                            .Layout("grid")
+                                            .DataSource(dataSource =>
+                                            {
+                                                dataSource.Custom()
+                                                .Transport(x => x.Read(read => read.Action("Destinations_First", "Destinations").Type(HttpVerbs.Get)))
+                                                .ServerAggregates(false)
+                                                .ServerFiltering(false)
+                                                .ServerGrouping(false)
+                                                .ServerPaging(false)
+                                                .ServerSorting(false);
+                                            })
+                                            .HtmlAttributes(new { @class = "border-0 k-card-grid mt-5" })
+        )
+
+    </div>
+</div>
+
+<script type="text/x-kendo-tmpl" id="kendo-card-template">
+    <div class="k-card">
+        <img alt="#:Title#" src="@Url.Content("~/")#:DefaultImage#?width=320&height=320" class="k-card-image" />
+        <div class="k-card-body">
+            <h5 class="k-card-title">#:Title#</h5>
+            <h6 class="k-card-subtitle small text-muted font-italic">
+                # for (var i=0; i < data.ShortDescription.length; i++) {#
+                # if (i > 0) { #
+                &bull;
+                #}#
+                #:data.ShortDescription[i]#
+                #}#
+            </h6>
+        </div>
+        <div class="k-card-actions d-flex justify-content-between">
+            <span class="text-primary">From $#: data.LowestPrice #</span>
+            <a href="@Url.Content("~/")Destination/#:DestinationID#">View Details</a>
+        </div>
+    </div>
+</script>
+
+<div id="example" style="height: 100%">
+    <div class="responsive-message"></div>
+</div>
+<script>
+
+    var selectedID = "";
+    var offerType = "";
+    var priceRange = "";
+    var ids = "1";
+
+    function getRating(rating) {
+        var count = Math.floor(rating);
+        var result = "";
+        for (var i = 0; i < count; i++) {
+            result += "<span class='k-icon k-i-star'></span>";
+        }
+        return result;
+    }
+    function destinationsSelect(e) {
+        selectedID = e.dataItem.DestinationID;
+    }
+
+    function destinationsChange(e) {
+        if (e.sender.select() < 0) {
+            selectedID = "";
+        }
+    }
+
+    function searchClick() {
+        var priceDropDown = $("#PriceRangeDropDown").data("kendoDropDownList");
+        var offerDropDown = $("#OfferType").data("kendoDropDownList");
+        var prices = $('#priceRange').val().split('-');
+        var url = "@Url.Content("~/")Destinations/Destinations?isSpecial=" + (offerDropDown.value() === 'Special') + "&priceFrom=" + prices[0] + "&priceTo=" + prices[1];
+
+        window.location.href = url;
+    }
+
+    $(function () {
+        if ("matchMedia" in window) {
+            var mql = window.matchMedia("(max-width: 767.98px)");
+            var destinations = $("#Destinations").data("kendoComboBox");
+
+            if (mql.matches) {
+                @Html.Kendo().DeferredScriptsFor("PriceRangeSlider", false)
+                $('.k-price-range-slider-wrapper').show();
+                destinations.popup.options.appendTo = destinations.wrapper.parent();
+            }
+            else {
+                @Html.Kendo().DeferredScriptsFor("PriceRangeDropDown", false)
+                $('.k-price-range-drop-down-wrapper').show();
+            }
+        }
+
+        dataSource = new kendo.data.DataSource({
+            transport: {
+                read: {
+                    url: ('@Url.Action("GetSpecialDestinations")'),
+                    dataType: "json"
+                }
+            }
+        });
+    });
+
+    //Open on focus logic
+    $(function () {
+        $("[data-role=combobox]").each(function () {
+            var widget = $(this).getKendoComboBox();
+            widget.input.on("focus", function () {
+                widget.open();
+            });
+        });
+    });
+
+    $(window).resize(function () {
+        var destinationCombo = $("#Destinations").data("kendoComboBox");
+        var priceDropDown = $("#PriceRangeDropDown").data("kendoDropDownList");
+        var offerDropDown = $("#OfferType").data("kendoDropDownList");
+
+        destinationCombo.close();
+        priceDropDown? priceDropDown.close():'';
+        offerDropDown.close();
+    });
+
+    function onOfferTypeChange(e) {
+        var destinationCombo = $("#Destinations").data("kendoComboBox");
+        var currentFilters = prepareQuery(destinationCombo.dataSource.filter(), 'IsSpecial');
+
+        if (this.value() === 'Special') {
+            currentFilters.filters.push({ field: 'IsSpecial', operator: 'eq', value: true });
+        } else if (this.value() === 'Special') {
+            currentFilters.filters.push({ field: 'IsSpecial', operator: 'eq', value: false });
+        }
+
+        applyQuery(destinationCombo, currentFilters);
+    }
+
+    function priceRangeDropDownChange() {
+        $('#priceRange').val(this.value());
+        filterPrice();
+    }
+
+    function priceRangeSliderChange(e) {
+        $("#priceRange").val(e.values.toString().replace(",", "-"));
+        filterPrice();
+    }
+
+    function filterPrice(){
+        var destinationCombo = $("#Destinations").data("kendoComboBox");
+        var currentFilters = prepareQuery(destinationCombo.dataSource.filter(), 'LowestPrice');
+
+        var values = $('#priceRange').val().split('-');
+        if (values.length) {
+            currentFilters.filters.push({ field: 'LowestPrice', operator: 'gte', value: +values[0] });
+            currentFilters.filters.push({ field: 'LowestPrice', operator: 'lte', value: +values[1] });
+        }
+
+        applyQuery(destinationCombo, currentFilters);
+    }
+
+    function prepareQuery(query, field) {
+        if (!query) {
+            query = { logic: 'and', filters: [] };
+        } else {
+            removeFiltersForField(query, field);
+        }
+
+        return query;
+    }
+
+    function applyQuery(widget, query) {
+        if (query.filters.length) {
+            widget.dataSource.filter(query);
+        } else {
+            widget.dataSource.filter({});
+        }
+    }
+
+    function removeFiltersForField(expression, field) {
+        if (expression.filters) {
+            expression.filters = $.grep(expression.filters, function (filter) {
+                removeFiltersForField(filter, field);
+                if (filter.filters) {
+                    return filter.filters.length;
+                } else {
+                    return filter.field != field;
+                }
+            });
+        }
+    }
+</script>
+<style>
+    .k-price-range-drop-down-wrapper, .k-price-range-slider-wrapper {
+        display: none;
+    }
+</style>

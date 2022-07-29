@@ -1,0 +1,138 @@
+@{
+    ViewBag.Title = "Contact";
+}
+@section Kendo
+{
+    <script src="https://kendo.cdn.telerik.com/2020.2.513/js/kendo.validator.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2020.2.513/js/kendo.userevents.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2020.2.513/js/kendo.tooltip.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2020.2.513/js/kendo.color.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2020.2.513/js/kendo.drawing.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2020.2.513/js/kendo.dataviz.core.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2020.2.513/js/kendo.fx.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2020.2.513/js/kendo.draganddrop.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2020.2.513/js/kendo.mobile.scroller.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2020.2.513/js/kendo.dataviz.map.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2020.2.513/js/kendo.textbox.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2020.2.513/js/kendo.maskedtextbox.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2020.2.513/js/kendo.list.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2020.2.513/js/kendo.dropdownlist.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2020.2.513/js/kendo.dialog.min.js"></script>
+}
+
+<div class="py-5"></div>
+<div class="container">
+    <div class="text-center tx-bottom-dash mb-5">
+        <h1 class="h1">@ViewBag.Title</h1>
+    </div>
+    <div class="row">
+        <div class="col-6 text-right">
+            <p class="h4">Address</p>
+            <p>
+                Tallagang road main Blvd<br />
+                1784 Abdullah<br />
+                Islamabad
+            </p>
+        </div>
+        <div class="col-6 text-left">
+            <p class="h4">Phone &amp; Fax</p>
+            <p>
+                P: <a href="tel:+928099850">+92 8099850</a><br />
+                F: <a href="tel:+92172492116">+92 249 2116</a>
+            </p>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="row my-5">
+        <div class="col-md-12">
+            @(Html.Kendo().Map()
+                .Name("map1")
+                .Center(33, 73)
+                .Zoom(6)
+                .HtmlAttributes(new { @style = "width: 100%; height: 320px;" })
+                .Layers(layers =>
+                {
+                    layers.Add()
+                        .Type(MapLayerType.Tile)
+                        .UrlTemplate("https://#= subdomain #.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png")
+                        .Subdomains("a", "b", "c")
+                        .Attribution("&copy; <a href='http://osm.org/copyright' title='OpenStreetMap contributors' target='_blank'>OpenStreetMap contributors</a>.");
+                })
+                .Markers(markers =>
+                {
+                    markers.Add()
+                        .Location(33.7071648, 73.0506294)
+                        .Shape(MapMarkersShape.PinTarget)
+                        .Title("Office")
+                        .Tooltip(tooltip => tooltip.Content("Tallagang road main Blvd 1784 Abdullah Islamabad"));
+            })
+            )
+        </div>
+    </div>
+    <form id="feedbackForm">
+        <div class="row">
+            <div class="form-group col-md-6">
+                <label for="FirstName">First name</label>
+                @(Html.Kendo().TextBox().Name("FirstName").HtmlAttributes(new { @style = "width: 100%" }))
+            </div>
+            <div class="form-group col-md-6">
+                <label for="LastName">Last Name</label>
+                @(Html.Kendo().TextBox().Name("LastName").HtmlAttributes(new { @style = "width: 100%" }))
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-md-6">
+                <label for="mobile">Mobile*</label>
+                @(Html.Kendo().MaskedTextBox()
+                    .Name("mobile")
+                    .Mask("(999) 000-0000")
+                    .HtmlAttributes(new { @style = "width: 100%" })
+                )
+            </div>
+            <div class="form-group col-md-6">
+                <label for="country">Where are you from</label>
+                @(Html.Kendo().DropDownList()
+                    .Name("country")
+                    .Height(192)
+                    .OptionLabel("Select country")
+                    .DataSource(source =>
+                    {
+                        source.Read(read =>
+                        {
+                            read.Action("GetCountries", "Contact");
+                        });
+                    })
+                    .HtmlAttributes(new { @style = "width: 100%" })
+                )
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-md-12">
+                <label for="Comments">Comments</label>
+                @(Html.TextArea("Comments", new { @style = "width: 100%; resize: none;", rows = "5", @class = "k-textarea", cols = "200" }))
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <button aria-label="Submit" class="k-button k-primary tx-send-button" type="submit">Send</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script>
+    $(document).ready(function () {
+        var validator = $("#feedbackForm").kendoValidator().data("kendoValidator");
+        $("#feedbackForm").submit(function (e) {
+            e.preventDefault();
+            if (validator.validate()) {
+                kendo.alert("Thank you for your feedback!");
+
+                $(e.target).find("input, textarea").val("");
+                $(e.target).find("[data-role='dropdownlist']").data("kendoDropDownList").value("");
+
+            }
+        });
+    });
+</script>

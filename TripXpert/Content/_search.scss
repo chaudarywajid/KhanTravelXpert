@@ -1,0 +1,154 @@
+.tx-jumbotron-home {
+    margin-top: -70px;
+    height: 520px;
+    background-image: url("/images/app/homepage-image.jpg");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+
+    .h1 {
+        text-shadow: 0 0 60px black;
+    }
+}
+
+
+.tx-searchbar {
+    margin: 0;
+    background-color: $input-bg;
+
+    > div {
+        padding: 0;
+    }
+    > div > .k-icon {
+        margin: 0 10px;
+        font-size: 32px;
+        align-self: center;
+        opacity: .5;
+    }
+
+
+    // Kendo controls
+    .tx-search-button {
+        padding-top: calc( 10px + #{$button-padding-y} );
+        padding-bottom: calc( 10px + #{$button-padding-y} );
+        border-radius: 0;
+        border-width: 0;
+    }
+
+
+    %tx-dropdown {
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        .k-select,
+        .k-dropdown-wrap {
+            border-width: 0;
+            border-radius: 0;
+            background: none;
+            box-shadow: none;
+        }
+    }
+    span.tx-searchbox {
+        @extend %tx-dropdown;
+    }
+    span.tx-offertype {
+        @extend %tx-dropdown;
+        border-left-width: 1px;
+    }
+    span.tx-pricerange {
+        @extend %tx-dropdown;
+        border-left-width: 1px;
+    }
+}
+
+
+.k-popup#Destinations-list {
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+    .k-state-focused {
+        box-shadow: none;
+    }
+}
+
+
+#tx-searchbar-container {
+}
+@include media-breakpoint-down(sm) {
+
+    .tx-search-open {
+        padding-top: calc( 10px + #{$input-padding-y} );
+        padding-bottom: calc( 10px + #{$input-padding-y} );
+        border-radius: 0;
+        border-width: 0;
+    }
+
+    #tx-searchbar-container {
+        padding: $spacer ($spacer * 2);
+        height: 100vh;
+        max-height: none;
+        color: $popup-text;
+        background-color: $popup-bg;
+        overflow: auto !important;
+        display: none !important;
+        flex-direction: column;
+        align-items: stretch;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 2;
+
+        &.k-rpanel-expanded {
+            display: flex !important;
+        }
+
+        .tx-search-close {
+            margin-right: (-$spacer);
+            align-self: flex-end;
+            order: 0;
+            flex-shrink: 0;
+        }
+
+        .k-slider-horizontal .k-label,
+        .k-slider-horizontal .k-first .k-label,
+        .k-slider-horizontal .k-last .k-label {
+            width: auto;
+            left: 50%;
+            right: auto;
+            transform: translateX(-50%);
+        }
+
+        .tx-searchbox {
+            .k-dropdown-wrap {
+                border-bottom-width: 1px;
+            }
+
+            .k-input {
+                padding-left: 0;
+            }
+
+            .k-select {
+                display: none;
+            }
+        }
+    }
+
+    #tx-searchbox-wrapper > .k-animation-container {
+        height: auto !important;
+        position: static !important;
+        transform: none !important;
+
+        > .k-popup {
+            height: auto !important;
+            position: static !important;
+            transform: none !important;
+            border-width: 0;
+        }
+    }
+}

@@ -1,0 +1,77 @@
+@{
+    ViewBag.Title = "Destinations";
+}
+@section Kendo
+{
+    <script src="https://kendo.cdn.telerik.com/2020.2.513/js/kendo.listview.min.js"></script>
+}
+
+@model int[]
+
+<div class="py-5"></div>
+<div class="container">
+    <div class="text-center tx-bottom-dash mb-5">
+        <h2 class="h1">Available Destinations</h2>
+    </div>
+
+    @(Html.Kendo().ListView<TripXpert.Models.DestinationViewModel>()
+                .Name("listView")
+                .TagName("div")
+                .ClientTemplateId("kendo-card-template")
+                .Layout("grid")
+                .DataSource(dataSource =>
+                {
+                    dataSource.Read(read => read.Action("Destinations_Read", "Destinations").Data("getIds"));
+                    dataSource.PageSize(21);
+                })
+                .HtmlAttributes(new { @class = "border-0 k-card-columns" })
+    )
+
+</div>
+
+<script type="text/x-kendo-tmpl" id="kendo-card-template">
+    <div class="k-card">
+        <img alt="#:Title#" src="@Url.Content("~/")#:DefaultImage#?width=320&height=320" class="k-card-image" />
+        <div class="k-card-body">
+            <h5 class="k-card-title">#:Title#</h5>
+            <h6 class="k-card-subtitle small text-muted font-italic">
+                # for (var i=0; i < data.ShortDescription.length; i++) {#
+                # if (i > 0) { #
+                &bull;
+                #}#
+                #:data.ShortDescription[i]#
+                #}#
+            </h6>
+        </div>
+        <div class="k-card-actions d-flex justify-content-between">
+            <span class="text-primary">From $#: data.LowestPrice #</span>
+            <a href="@Url.Content("~/")Destination/#:DestinationID#">View Details</a>
+        </div>
+    </div>
+</script>
+
+<script>
+    function getRating(rating) {
+        var count = Math.floor(rating);
+        var result = "";
+        for (var i = 0; i < count; i++) {
+            result += "<span class='k-icon k-i-star'></span>";
+        }
+        return result;
+    }
+
+    function getIds() {
+        var ids = JSON.parse('@Html.Raw(Json.Encode(Model))')
+
+        if (ids) {
+            return { ids: ids  };
+        }
+    }
+
+    var getQueryString = function (field, url) {
+        var href = url ? url : window.location.href;
+        var reg = new RegExp('[?&]' + field + '=([^&#]*)', 'i');
+        var string = reg.exec(href);
+        return string ? string[1] : null;
+    };
+</script>
